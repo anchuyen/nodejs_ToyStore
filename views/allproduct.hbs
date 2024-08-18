@@ -1,0 +1,22 @@
+<section class="section gallery">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mb-5">
+        <h1 class="font-weight-bold">All Latest Smart Watches</h1>
+      </div>
+      {{#each products}}
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="block">
+          <img class="img-fluid" src="{{this.imageUrl}}" alt="">
+        </div>
+        <div class="product-info">
+          <h4 class="mb-2">
+            <a href="/product/{{this._id}}" class="link-title">{{this.name}}</a>
+          </h4>
+          <p class="price">${{this.price}}</p>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</section>
